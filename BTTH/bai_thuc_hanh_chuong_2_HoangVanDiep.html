@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+
+<body>
+<form>
+  <h2>Thêm Sinh Viên</h2>
+
+  <label for="maSv">Mã sinh viên:</label><br>
+  <input type="text" id="maSv" name="maSv" required><br><br>
+
+  <label for="hoTen">Họ và tên:</label><br>
+  <input type="text" id="hoTen" name="hoTen" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="ngaySinh">Ngày sinh:</label><br>
+  <input type="date" id="ngaySinh" name="ngaySinh"><br><br>
+
+  <label>Giới tính:</label><br>
+  <input type="radio" id="nam" name="gioiTinh" value="Nam">
+  <label for="nam">Nam</label>
+  <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+  <label for="nu">Nữ</label><br><br>
+
+  <label for="ghiChu">Ghi chú:</label><br>
+  <textarea id="ghiChu" name="ghiChu" rows="4"></textarea><br><br>
+
+  <button type="submit">Thêm sinh viên</button>
+
+  <hr> <br>
+</form>
+  <div class="container" >
+    <h2>Danh Sách Sinh Viên</h2>
+    <table border="1" style="border-collapse: collapse; ">
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Email</th>
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>SV001</td>
+          <td>Hoàng Văn Điệp</td>
+          <td>diephv@gmail.com</td>
+          <td>Nam</td>
+          <td>2003-09-24</td>
+                <td>
+            <button>Sửa</button>
+            <button>Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SV002</td>
+          <td>Trần Thị Hi</td>
+          <td>hitran@gmail.com</td>
+          <td>Nữ</td>
+          <td>2002-12-10</td>
+          <td>
+            <button>Sửa</button>
+            <button>Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SV003</td>
+          <td>Lê Văn Luyện</td>
+          <td>luyenlv@egmail.com</td>
+          <td>Nam</td>
+          <td>2001-08-15</td>
+                <td>
+            <button>Sửa</button>
+            <button>Xóa</button>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div> 
+  <br>
+    <hr> <br>
+    <h1>BT03</h1>
+     <table border="1" style="border-collapse: collapse; width: 100%; text-align: center;" >
+            <tr>
+                <th rowspan="2" , colspan="2">Student</th>
+                <th colspan="4">Exam</th>
+                <th colspan="4">2nd Exam</th>
+                <th rowspan="2", colspan="2">Grade Final</th>
+            </tr>
+
+            <tr>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+                <th>Q1</th>
+                <th>Q2</th>
+                <th>Q3</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <td>8</td>
+                <td>7</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <th>NR</th>
+                <th>R</th>
+            </tr>
+
+            <tr>
+                <td>82364236</td>
+                <td>John</td>
+                <td>70%</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>17.6</td>
+                <td colspan="4"></td>
+                <td>17.6</td>
+                <td>18</td>
+            </tr>
+
+            <tr>
+                <td>80300403</td>
+                <td>Mary</td>
+                <td>10%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>6.8</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td>50%</td>
+                <td>16.5</td>
+                <td>16.5</td>
+                <td>17</td>
+            </tr>
+
+            <tr>
+                <td>80834929</td>
+                <td>Clarie</td>
+                <td colspan="4"></td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>50%</td>
+                <td>10.0</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            
+        </table>
+        <hr>
+<br>
+        <h1>BT04</h1>
+        <h2>Basic Info</h2>
+  <hr>
+  <table  cellpadding="5" cellspacing="0" width="700">
+    <tr>
+      <td>Employee ID</td>
+      <td><input type="text" value="9" style="border: none;"></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type="text" value="Dodsworth" style="border: none;"></td>
+    </tr>
+    <tr>
+      <td>First Name</td>
+      <td><input type="text" value="Anne"></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>
+        <input type="radio" name="gender"> Male <br>
+        <input type="radio" name="gender"> Female <br>
+        <input type="radio" name="gender"> XXX <br>
+        <input type="radio" name="gender"> ZZZ
+      </td>
+    </tr>
+    <tr>
+      <td>Title</td>
+      <td><input type="text" value="Sales Representative"></td>
+    </tr>
+    <tr>
+      <td>Suffix</td>
+      <td><input type="text" value="Ms."></td>
+    </tr>
+    <tr>
+      <td>Birth Date</td>
+      <td><input type="text" value="1969-07-02 00:00:00"></td>
+    </tr>
+    <tr>
+      <td>Hire Date</td>
+      <td><input type="text" value="1994-11-15 00:00:00"></td>
+    </tr>
+    <tr>
+      <td>SSN #</td>
+      <td><input type="text" value=""></td>
+    </tr>
+    <tr>
+      <td>Reports To</td>
+      <td>
+        <select>
+          <option>Buchanan</option>
+          <option>Jina</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+
+  <br><h2>Contact Info</h2>
+  <hr>
+  <table cellpadding="5" cellspacing="0" width="600">
+    <tr>
+      <td>Email</td>
+      <td><input type="text" value="name@example.com"></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td><input type="text" value="7 Houndstooth Rd."></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" value="London"></td>
+    </tr>
+    <tr>
+      <td>Region</td>
+      <td><input type="text" value=""></td>
+    </tr>
+    <tr>
+      <td>Postal Code</td>
+      <td><input type="text" value="WG2 7LT"></td>
+    </tr>
+    <tr>
+      <td>Country</td>
+      <td>
+        <select>
+          <option>Russian Federation</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>US Home Phone</td>
+      <td><input type="text" value="(234)234-2342"></td>
+    </tr>
+    <tr>
+      <td>Photo</td>
+      <td><input type="text" value="EmpID9.bmp"></td>
+    </tr>
+  </table>
+
+  <br><h2>Optional Info</h2> 
+  <hr>
+  <table cellpadding="5" cellspacing="0" width="1200">
+    <tr>
+      <td>Notes</td>
+      <td>
+        <textarea rows="6" cols="60">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Preferred Shift</td>
+      <td>
+        <input type="checkbox"> Regular <br>
+        <input type="checkbox"> Gravy Yard
+      </td>
+    </tr>
+    <tr>
+      <td>Active?</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Are you human?</td>
+      <td>
+        <h3>TIDAWO</h3>
+        Click to change<br>
+        <input type="text">
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <hr>
+  <table width="700">
+    <tr>
+      <td></td>
+     
+        <input type="submit" value="Submit">
+        <input type="submit" value="Cancel">
+      </td>
+      <td>*required</td>
+    </tr>
+  </table>
+</body>
+</html>
