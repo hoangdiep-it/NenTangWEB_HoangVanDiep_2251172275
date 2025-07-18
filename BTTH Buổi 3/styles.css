@@ -1,0 +1,145 @@
+/* form them sinhvien */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gender {
+  margin-top: 5px;
+}
+
+.gender input[type="radio"] {
+  margin-right: 5px;
+}
+
+.gender label {
+  margin-right: 15px;
+  display: inline;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Bang danh sach */
+
+
+.container {
+ 
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  /* margin-bottom: 20px; */
+  background-color: rgb(13, 86, 117);
+  border-radius: 5px;
+padding: 10px;
+}
+
+.add-btn {
+  display: block;
+  max-width: 150px;
+  margin: 0 0 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  border: 1px solid #0000;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 14px 18px;
+  border: 1px solid #0000;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  border: 2px solid black; /* Viền toàn bảng */
+}
+
+th, td {
+  padding: 14px 18px;
+  border: 1px solid black; /* Viền ô */
+  text-align: center;
+}
+

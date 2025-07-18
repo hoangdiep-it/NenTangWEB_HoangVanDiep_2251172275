@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan ly sinh vien</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<form>
+  <h2 style="background-color: green;">Thêm Sinh Viên</h2>
+
+  <label for="maSv">Mã sinh viên:</label><br>
+  <input type="text" id="maSv" name="maSv" required><br><br>
+
+  <label for="hoTen">Họ và tên:</label><br>
+  <input type="text" id="hoTen" name="hoTen" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="ngaySinh">Ngày sinh:</label><br>
+  <input type="date" id="ngaySinh" name="ngaySinh"><br><br>
+
+  <label>Giới tính:</label><br>
+  <input type="radio" id="nam" name="gioiTinh" value="Nam">
+  <label for="nam">Nam</label>
+  <input type="radio" id="nu" name="gioiTinh" value="Nữ">
+  <label for="nu">Nữ</label><br><br>
+
+  <label for="ghiChu">Ghi chú:</label><br>
+  <textarea id="ghiChu" name="ghiChu" rows="4"></textarea><br><br>
+<hr>
+  <button type="submit">Thêm sinh viên</button>
+<br>
+</form>
+  <div class="container" >
+    <h2>Danh Sách Sinh Viên</h2>
+<!-- <button class="add-btn">Them sinh vien</button> -->
+    <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Email</th>
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>SV001</td>
+          <td>Hoàng Văn Điệp</td>
+          <td>diephv@gmail.com</td>
+          <td>Nam</td>
+          <td>2003-09-24</td>
+                <td>
+            <button class="edit-btn">Sửa</button>
+            <button class="delete-btn">Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SV002</td>
+          <td>Trần Thị Hi</td>
+          <td>hitran@gmail.com</td>
+          <td>Nữ</td>
+          <td>2002-12-10</td>
+          <td>
+            <button class="edit-btn">Sửa</button>
+            <button class="delete-btn">Xóa</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SV003</td>
+          <td>Lê Văn Luyện</td>
+          <td>luyenlv@egmail.com</td>
+          <td>Nam</td>
+          <td>2001-08-15</td>
+                <td>
+            <button class="edit-btn">Sửa</button>
+            <button class="delete-btn">Xóa</button>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div> 
+</body>
+</html>
