@@ -1,0 +1,200 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #1677cc;
+  --danger: #dc3545;
+  --muted: #6b7280;
+ 
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #222;
+}
+
+/* root container */
+#root-container { padding: 30px 20px; }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(22, 23, 24, 0.08);
+}
+
+/* header */
+.header {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.header h1 { 
+  
+  margin: 0; font-size: 26px; }
+.btn-add {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-add:hover { opacity: 0.8; }
+
+/* table */
+.list-wrap h2 { margin: 8px 0 12px; font-size: 20px; color: var(--muted); }
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+  font-size: 15px;
+  min-width: 700px;
+}
+.student-table th, .student-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: middle;
+}
+.student-table thead th {
+  text-align: left;
+  background: #8f97c6;
+  color: #333;
+  font-weight: 600;
+}
+.student-table tbody tr:hover { background: #e6f0fb; }
+
+/* empty row */
+.empty { text-align: center; padding: 20px; color: var(--muted); }
+
+/* buttons in table */
+.btn { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.btn.small { padding: 6px 10px; font-size: 13px; }
+.btn.edit, .btn.small.edit { background: #c7c407; color: #111; }
+.btn.del, .btn.small.del { background: var(--danger); color: #fff; }
+.btn.small.edit:hover { background: #deef1b; color: #111; }
+.btn.small.del:hover { background: #f2061e; color: #fff; }
+/* popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+}
+.popup-box {
+  width: 680px;
+  max-width: calc(100% - 40px);
+  background: var(--card);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.18);
+}
+
+/* form */
+.student-form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; align-items: start; }
+.student-form h3 { grid-column: 1 / -1; margin: 0 0 6px; font-size: 28px; }
+.student-form label { font-size: 13px; color: var(--muted); margin-bottom: 6px; display:block; }
+.student-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.student-form .error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 6px;
+  grid-column: 1 / -1;
+}
+
+.student-form .main-form {
+  width: 500px;
+}
+/* full width fields (make address full-width) */
+.student-form input[id="address"] { grid-column: 1 / -1; }
+
+/* actions */
+.form-actions, .student-form .form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  grid-column: 1 / -1;
+  margin-top: 6px;
+}
+.btn.submit { background: var(--accent); color: #fff; padding: 10px 16px; border-radius: 8px; }
+.btn.cancel { background: #e6e6e6; color: #111; padding: 10px 14px; border-radius: 8px; }
+
+/* responsive fallback (small screens) */
+@media (max-width: 760px) {
+  .student-form { grid-template-columns: 1fr; }
+  .student-table { font-size: 14px; min-width: 0; }
+  .popup-box { width: 92%; }
+}
+
+.student-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.student-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;           /* Đẩy label lên 1 dòng riêng */
+  font-weight: 600;
+  margin-bottom: 6px;        /* Khoảng cách giữa label và input */
+}
+
+.form-group input {
+  width: 100%;               /* Input chiếm full chiều ngang */
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn.submit {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.cancel {
+  background-color: #827b7c;
+  color: white;
+}
